@@ -1,0 +1,8 @@
+<h1>New game</h1>
+<% @letters.each do |letter| %>
+  <p><%= letter %> </p>
+<% end %>
+<form action="/score" method="get">
+  <input type="text" name="food_type" placeholder="What kind of food?">
+  <input type="submit">
+</form>
